@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h2>Send a Message</h2>
+        <form action="/submit-form" method="Post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="message">message</label>
+                <textarea id="message" name="message" row="4" required></textarea>
+            </div>
+
+            <button type="submit">send</button>
+        </form>
+    </section>
+    <section>
+        <h2>Contract Form</h2>
+        <form action="/submit-form" method="post">
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+27 82 123 4576">
+            </div>
+
+            <div>
+                <label for="subject">subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a subject</option>
+                    <option value="general"> General Enquiry</option>
+                    <option value="support">Customer Support</option>
+                    <option value="billing">billing &amp; Accounts</option>
+                    <option value="other">Other</option>
+
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" row="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Send  Message</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- 3. Schedule table section -->
+<section>
+  <h2>Available Appointment Times</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th scope="col">Day</th>
+        <th scope="col">Available Appointment Times</th>
+        <th scope="col">Availability</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>09:00 – 11:30, 14:00 – 16:30</td>
+        <td>Open</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>09:00 – 12:00, 13:30 – 16:00</td>
+        <td>Open</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>10:00 – 12:30, 14:00 – 17:00</td>
+        <td>Open</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>08:30 – 11:30, 13:00 – 15:30</td>
+        <td>Limited</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>09:00 – 12:00</td>
+        <td>Morning Only</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td>09:30 – 12:30</td>
+        <td>By Booking</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+    
+</body>
+</html>
